@@ -110,7 +110,7 @@
         <p class="lead text">Home Automation HMI: Thermostat Design </p>
         <p class="lead text" style="font-size: 14px;">Evaluate creation of home automation HMI on AM69 processors with Thermostat Design. Design adds connectivity function with ethernet and wifi to display location based weather updates and remote configuration</p>
         <footer>
-          <input type="button" value="Launch" onclick="seva_send_message('app_thermostat_demo');" />
+          <input type="button" value="Launch" onclick="my_alert('Downloading Thermostat Demo...Please Switch to Browsers First Tab to Run the Demo'); seva_send_message('app_thermostat_demo');" />
 	</footer>
       </div>
     </div>
@@ -131,6 +131,9 @@
         });
         function seva_send_message(message) {
                 source.postMessage(message, origin);
+        }
+        function my_alert(message) {
+                alert(message);
         }
 </script>
 </body>
